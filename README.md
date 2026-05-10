@@ -25,7 +25,7 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 ### Links
 
 - Solution URL: https://github.com/levilex-kilobytes/social-links-profile
-- Live Site URL: https://vercel.com/levilex-kilobytes-projects/social-links-profile
+- Live Site URL:https://social-links-profile-roan.vercel.app/
 
 ## My process
 
