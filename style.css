@@ -1,0 +1,156 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #141414;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.page {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile {
+  background-color: #1f1f1f;
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  max-width: 24rem;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.profile__avatar-wrapper {
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #333333;
+}
+
+.profile__avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.profile__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.profile__name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.profile__location {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #c5f135;
+}
+
+.profile__bio {
+  font-size: 0.875rem;
+  color: #ffffff99;
+  margin-block-start: 0.25rem;
+  line-height: 1.6;
+}
+
+.links {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.links__btn {
+  display: block;
+  width: 100%;
+  padding: 0.875rem 1rem;
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.links__btn:hover,
+.links__btn:focus {
+  background-color: #c5f135;
+  color: #141414;
+}
+
+a:focus-visible {
+  outline: 2px solid #c5f135;
+  outline-offset: 3px;
+  border-radius: 0.5rem;
+}
+
+.attribution {
+  margin-block-start: 1.5rem;
+  font-size: 0.75rem;
+  color: #ffffff99;
+  text-align: center;
+}
+
+.attribution a {
+  color: #c5f135;
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+/* ========================
+   Mobile
+======================== */
+@media (max-width: 25em) {
+  .profile {
+    padding: 1.5rem 1.25rem;
+    gap: 1rem;
+  }
+
+  .profile__name {
+    font-size: 1.25rem;
+  }
+
+  .profile__avatar-wrapper {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+/* Reduced Motion*/
+@media (prefers-reduced-motion: no-preference) {
+  .links__btn {
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease;
+  }
+}
