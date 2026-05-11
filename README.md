@@ -35,7 +35,6 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 - CSS without custom properties
 - BEM naming convention
 - Flexbox
-- Mobile-first workflow
 - Accessibility best practices
 
 ### What I learned
@@ -44,21 +43,13 @@ I learned a better way to handle reduced motion. Instead of disabling
 transitions after the fact, I keep them off by default and only enable
 them for users who have no motion preference:
 
-```css
+````css
 /* Transitions off by default */
 .links__btn {
   /* no transition here */
 }
 
-/* Only enable for users comfortable with motion */
-@media (prefers-reduced-motion: no-preference) {
-  .links__btn {
-    transition:
-      background-color 0.2s ease,
-      color 0.2s ease;
-  }
-}
-```
+/* Only enable for users
 
 I also learned to always place media queries at the bottom of the
 CSS file — mobile breakpoints first, reduced motion last:
@@ -71,15 +62,6 @@ CSS file — mobile breakpoints first, reduced motion last:
   }
 }
 
-/* Reduced motion — always last */
-@media (prefers-reduced-motion: no-preference) {
-  .links__btn {
-    transition:
-      background-color 0.2s ease,
-      color 0.2s ease;
-  }
-}
-```
 
 And I practiced BEM naming convention consistently:
 
@@ -130,5 +112,5 @@ I used **Claude (Anthropic)** throughout this project:
 
 ## Acknowledgments
 
-Thanks to [Frontend Mentor](https://www.frontendmentor.io) for this
-challenge
+Thanks to [Frontend Mentor](https://www.frontendmentor.io) for this challenge
+````
