@@ -127,9 +127,6 @@ a:focus-visible {
   text-decoration: underline;
 }
 
-/* ========================
-   Mobile
-======================== */
 @media (max-width: 25em) {
   .profile {
     padding: 1.5rem 1.25rem;
