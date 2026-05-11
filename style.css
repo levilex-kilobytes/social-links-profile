@@ -142,12 +142,3 @@ a:focus-visible {
     height: 5rem;
   }
 }
-
-/* Reduced Motion*/
-@media (prefers-reduced-motion: no-preference) {
-  .links__btn {
-    transition:
-      background-color 0.2s ease,
-      color 0.2s ease;
-  }
-}
